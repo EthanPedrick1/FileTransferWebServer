@@ -6,9 +6,9 @@ import subprocess
 
 username_list = ['Usrnm']
 password_list = ['Pswrd']
-base_path = "D:\\CloudStorage\\UploadedFiles"
+base_path = "RemovedForSecurity"
 currentUser = "Usrnm"
-currentDirectoryPath = "D:\\CloudStorage"
+currentDirectoryPath = "RemovedForSecurity"
 
 def search_files(search_term):
     folder_path = currentDirectoryPath

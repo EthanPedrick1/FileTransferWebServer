@@ -1,0 +1,102 @@
+.container {
+    display:flex;
+    flex-direction:column;
+    padding: 1em;
+    max-width: 100%;
+    min-height: 100%;
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+    background-color:rgb(51, 51, 50);
+}
+.sidebar {
+    display: flex;
+    flex-direction: row;
+}
+.rowholder {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding-left: 20px;
+}
+.columnholder {
+    display:flex;
+    flex-direction:column;
+}
+
+body,html {
+    margin: 0;
+    width: 100%;
+}
+html {
+    background-color: #000000;
+}
+
+
+/*General Use*/
+#title {
+    text-align:center;
+    line-height:1.5em;
+    color:rgb(212, 173, 122);
+    font-size:2.25em;
+}
+#mainMenu {
+    text-align:center;
+    line-height:3em;
+    color:rgb(212, 173, 122);
+    font-size:1.875em;
+}
+#loginBox {
+    text-align:center;
+    color: rgb(78, 77, 76);
+    width: 50%;
+    height: 50%;
+}
+#fileUploadMessage {
+    text-align: center;
+    color: rgb(212, 173, 122);
+    width: 20%;
+    height: 20%;
+    font-size: 1.875em;
+    line-height: 2em;
+}
+
+/*Login Input Field*/
+input[type=text], input[type=password] {
+    height: 50%;
+    width: 100%;
+    padding: 12px, 20px;
+    margin: 8px 0;
+    display: inline-flex;
+    border: 1px solid rgb(212, 173, 122);
+    box-sizing: border-box;
+}
+
+a:link { /*Univisited Link*/
+    color:rgb(212, 173, 122);
+    text-decoration:none;
+}
+a:visited {
+    color:rgb(212, 173, 122);
+    text-decoration:none;
+}
+a:hover {
+    color:rgb(192, 192, 192);
+    text-decoration:none;
+}
+a:active {
+    color:rgb(78, 77, 76);
+    text-decoration:none;
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+}
+*::-webkit-scrollbar-track {
+    background: #000000;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #53535375;
+    border-radius: 10px;
+    border: 3px none #00000025;
+}

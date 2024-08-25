@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="/main.css">
+    <head>
+        <meta charset="utf-8">
+        <title>New User</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id="title">
+                <h1> Please Create an Account</h1>
+            </div>
+            <div id="mainMenu">
+                <form action="/createAccount" method="post">
+                    <div class="rowholder">
+                        <label for "username"><h2>Username&ensp;</h2></label>
+                        <input type="text" placeholder="Enter Username" id="Uname" name="Cinput1" required class="loginBox">
+                    </div>
+                    <div class="rowholder">
+                        <label for "password"><h2>Password&ensp;</h2></label>
+                        <input type="text" placeholder="Enter Password" id="Pswrd" name="Cinput2" required class="loginBox">
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <a href="/index" style="text-decoration: none;">Go Back</a>
+            </div>
+        </div>
+    </body>
+</html>

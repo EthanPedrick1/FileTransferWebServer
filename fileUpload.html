@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="/main.css">
+    <head>
+        <meta charset="utf-8">
+        <title>File Upload</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id="title">
+                <h1>Upload your file below</h1>
+            </div>
+            <div id="mainMenu">
+                <form action="/upload" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="myFile">
+                    <button type="submit">Upload</button>
+                </form>
+                <a href="/fileViewer" style="text-decoration: none;">View Files</a>
+                <a href="/landingPage" style="text-decoration: none;">Return to Menu</a>
+                <a href="/index" style="text-decoration: none;">Log Out</a>
+            </div>
+            <div id="fileUploadMessage"></div>
+            <script>
+                document.querySelector('form').addEventListener('submit', async(event) => {
+                    event.preventDefault();
+                    const formData = new FormData(event.target);
+                    const response = await fetch('/upload', {
+                        method: 'POST',
+                        body: formData,
+                    });
+                    if (response.ok) {
+                        document.getElementByID('fileUploadMessage').textContent = 'File uploaded successfully!';
+                    } else {
+                        console.error('Error uploading file');
+                    }
+                });
+            </script>
+        </div>
+    </body>
+</html>

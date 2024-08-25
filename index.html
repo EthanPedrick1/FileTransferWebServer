@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="/main.css">
+    <head>
+        <meta charset="utf-8">
+        <title>Main Menu</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id="title">
+                <h1> Main Menu</h1>
+            </div>
+            <div id="mainMenu">
+                <h2>Login:</h2>
+                <form action="/login" method="post">
+                    <div class="rowholder">
+                        <label for "username"><h2>Username&ensp;</h2></label>
+                        <input type="text" placeholder="Enter Username" id="Uname" name="input1" required class="loginBox">
+                    </div>
+                    <div class="rowholder">
+                        <label for "password"><h2>Password&ensp;</h2></label>
+                        <input type="text" placeholder="Enter Password" id="Pswrd" name="input2" required class="loginBox">
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <a href="/newUser" style="text-decoration: none;">Create an account</a>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!-- python -m http.server 8080 -->
